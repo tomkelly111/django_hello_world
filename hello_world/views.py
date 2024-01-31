@@ -4,4 +4,5 @@ from django.http import HttpResponse
 def index(request):
     if request.method == "POST":
         HttpResponse("You must have POSTed something.")
-    else return HttpResponse(request.method)
+    else:
+        return HttpResponse(request.method)
